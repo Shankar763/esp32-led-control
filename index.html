@@ -15,7 +15,7 @@
     <button onclick="toggleLED('off')">OFF</button>
     <script>
         function toggleLED(state) {
-            fetch(`http://your-esp32-address/${state}`)
+            fetch(`https://8e82-103-180-241-163.ngrok-free.app/${state}`)
                 .then(response => response.text())
                 .then(data => alert(data))
                 .catch(error => alert('Error: ' + error));
